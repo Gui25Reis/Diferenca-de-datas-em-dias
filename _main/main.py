@@ -1,4 +1,6 @@
-######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS - All rights reserved
+######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS
+
+# -*- coding: utf-8 -*-
 
 # Arquivo local:
 from gui_main import Gui_main

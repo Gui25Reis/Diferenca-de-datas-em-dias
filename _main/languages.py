@@ -1,4 +1,4 @@
-######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS - All rights reserved
+######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS
 
 # -*- coding: utf-8 -*-
 
@@ -26,7 +26,7 @@ class Language:
 
         elif (win_ == 1):   ## guiHome
             resp = lambda dI, dF, result: f"De {dI} até {dF} tem {result} dia(s).\n\n"
-            self.list = ["Data inicial","Data final","Insira os dados",
+            self.list = ["Data inicial", "Data final", "Insira os dados.",
                 "Data inicial precisa ser menor ou igual que a data final!\n\n",
                 resp
             ]
@@ -52,7 +52,7 @@ class Language:
             
         elif (win_ == 1):   ## guiHome
             resp = lambda dI, dF, result: f"From {dI} to {dF} you have {result} day(s).\n\n"
-            self.list = ["Start date", "End date", "Enter the data",
+            self.list = ["Start date", "End date", "Enter the data.",
                 "Start date must be less than or equal to the end date!\n\n",
                 resp
             ]

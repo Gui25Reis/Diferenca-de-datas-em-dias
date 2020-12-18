@@ -1,4 +1,4 @@
-######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS - All rights reserved
+######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS
 
 # -*- coding: utf-8 -*-
 
@@ -20,7 +20,7 @@ class Dif_emDias:
     ## Método especial: define as datas
     def setDatas(self, dt_Ini_:str, dt_Fin_:str):
         # Data Inicial:
-        self.dia_Ini, self.mes_Ini, self.ano_Ini = map(int, dt_Ini_.split("/"))                 # Cria os atributos
+        self.dia_Ini, self.mes_Ini, self.ano_Ini = map(int, dt_Ini_.split("/"))                                 # Cria os atributos
 
         # Data Final:
         self.dia_Fin, self.mes_Fin, self.ano_Fin = map(int, dt_Fin_.split("/"))

@@ -1,4 +1,4 @@
-######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS - All rights reserved
+######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS
 
 # -*- coding: utf-8 -*-
 
@@ -111,13 +111,12 @@ class Gui_main(QtWidgets.QMainWindow):
 
     ## Método: ação do botão: "salvar" (configurações)
     def salvar_Action(self) -> None:
-        antes = self.config.getPadrao()                                 # Antes de entrar na área de configuração, pega as configurações atuais
         self.setNovo()                                                  # Define as novas configurações
 
-        if (self.novo != antes):                                        # Se houve alguma alteração
-            if (self.novo[0] != antes[0]):                              # Linguagem mudou
+        if (self.novo != self.antes):                                   # Se houve alguma alteração
+            if (self.novo[0] != self.antes[0]):                         # Linguagem mudou
                 self.setLanguage(True, self.novo[0])                    # Define a nova linguagem    
-            if (self.novo[1] != antes[1]):                              # Formato da data mudou
+            if (self.novo[1] != self.antes[1]):                         # Formato da data mudou
                 self.home.setDateFormat(self.novo[1])                   # Define o formato das datas
         self.changeWid(False, self.home)                                # Muda a tela
     

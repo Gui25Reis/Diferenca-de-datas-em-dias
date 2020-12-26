@@ -1,0 +1,7 @@
+######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS
+
+## Removendo o que não é necessário mostrar. ##
+
+## Tirando a pasta vscode + pycache
+arquivos/_main/.vscode
+arquivos/_main/__pycache__

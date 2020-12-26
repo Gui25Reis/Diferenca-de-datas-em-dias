@@ -14,7 +14,7 @@ from languages import Language
 
 # GUI:
 from PyQt5.QtWidgets import QMessageBox
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QFont
 
 class Gui_popup(QMessageBox):
     ## Construtor: Cria a gui e o necessário para futuras configurações
@@ -28,6 +28,9 @@ class Gui_popup(QMessageBox):
 
         self.lg = Language()                                    # Instancia o objeto para configuração do idioma
         self.setLanguage(1)                                     # Idioma padrão: Português-Brasil
+
+        self.bt_Cancelar.setFont(QFont('Arial', 10))            # Definindo a fonte dos botões
+        self.bt_Salvar.setFont(QFont('Arial', 10))
 
     ## Destruidor: Deleta os atributos
     def __del__(self) -> None:

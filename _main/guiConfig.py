@@ -64,14 +64,13 @@ class Gui_config(QtWidgets.QWidget):
         self.cBox_Datas.setGeometry(QtCore.QRect(135, 20, 101, 22))                 # Posiciona
         self.cBox_Datas.addItems(["dd/MM/yyyy", "MM/dd/yyyy", "yyyy/MM/dd"])        # Coloca as opções (padrão: a primeira add [index = 0])
 
+
     ## ------------------------------------------------------------------------------------------------
     ## Botões:
-        self.bt_Salvar = QtWidgets.QPushButton(self.txts[4], self)                  # Cria o botão 
-        self.bt_Salvar.setGeometry(QtCore.QRect(190, 135, 80, 25))                  # Posiciona
+        self.bt_Salvar = self.bts(self.txts[4], 190, 135, 80, 25, self)             # Cria o botão "salvar"
+    
+        self.bt_Sair = self.bts(self.txts[5], 100, 135, 80, 25, self)               # Cria o botão "sair"
         
-        self.bt_Sair = QtWidgets.QPushButton(self.txts[5], self)                    # Cria o botão
-        self.bt_Sair.setGeometry(QtCore.QRect(100, 135, 80, 25))                    # Posiciona
-
 
 ## ------------------------------------------------------------------------------------------------
 ## ------------------------------------------------------------------------------------------------
@@ -84,10 +83,17 @@ class Gui_config(QtWidgets.QWidget):
         gb.setFont(QFont('Arial', tam_))                                            # Define a fonte
         return gb
 
+    ## Método: Cria todos os botões
+    def bts(self, txt_, p1_, p2_, p3_, p4_, wid_) -> QtWidgets.QPushButton:
+        bt = QtWidgets.QPushButton(txt_, wid_)                                      # Cria o botão
+        bt.setGeometry(QtCore.QRect(p1_, p2_, p3_, p4_))                            # Define a posição
+        bt.setFont(QFont('Arial', 10))                                              # Define a fonte
+        return bt
+
     ## Método: Verifica a opção selecionada da linguegem
-    def opcLanguage(self) -> bool:
-        if self.rbt_PtBr.isChecked():                                               # Verifica se "PortuguÊs-Brazil" está marcado
-            return 1                                                                # 1 -> PortuguÊs-Brazil
+    def opcLanguage(self) -> int:
+        if self.rbt_PtBr.isChecked():                                               # Verifica se "Português-Brazil" está marcado
+            return 1                                                                # 1 -> Português-Brazil
         return 0                                                                    # 0 -> English
 
     ## Método especial: Retorna o padrão definido
@@ -99,9 +105,17 @@ class Gui_config(QtWidgets.QWidget):
         self.lang = lg_                                                             # Define a linguagem
         self.fDate = fDt_                                                           # Define o formato
     
+    ## Método: Define os botões
+    def setBotoes(self, lg_:int, fDt_:str) -> None:
+        if lg_: self.rbt_PtBr.setChecked(True)                                      # Verifica se é pra deixar marcado essa opção
+        else: self.rbg_Eng.setChecked(True)
+
+        self.cBox_Datas.setCurrentText(fDt_)                                        # Deixa como o texto padrão
+
+
     ## Método: Define a linguagem
     def setLanguage(self, type_:int) -> None:
-        self.txts = self.lg.getList(type_, 2)                                      # Define a lista com os textos na liguagem pedida
+        self.txts = self.lg.getList(type_, 2)                                       # Define a lista com os textos na linguagem pedida
         self.translate()
     
 

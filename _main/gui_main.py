@@ -125,10 +125,13 @@ class Gui_main(QtWidgets.QMainWindow):
     def sair_Action(self) -> None:
         self.setNovo()                                                  # Define as novas configurações
 
-        if (self.novo != self.antes):                                   # Se houve alterção mas não salvou
+        if (self.novo != self.antes):                                   # Se houve alteração mas não salvou
             conf = self.popup.show_PopUp()                              # Mostra o PopUp (mensagem de aviso)
             if (conf == self.popup.getSave()):                          # PopUp: clicou em salvar
                 self.salvar_Action()                                    # Salva as alterações
+            else:                                                       # PopUp: clicou em sair
+                self.config.setBotoes(self.antes[0], self.antes[1])     # Deixa os botões como estavam
+    
         self.changeWid(False, self.home)                                # Muda a tela
 
 

@@ -122,7 +122,7 @@ class Gui_home(QtWidgets.QWidget):
         aux.setDate(dt_.date())                                                 # Define a mesma data
         aux.setDisplayFormat("dd/MM/yyyy")                                      # Deixa a auxliar como data normal
         s = str(aux.date().toPyDate())                                          # Deixa em formato para python
-        del aux                                                                 # Deletao aux (não precisa mais dele)
+        del aux                                                                 # Deleta o aux (não precisa mais dele)
         return self.format_Date(s, "dd/MM/yyyy")                                # Mostra a data formatada no padrão brasileiro
      
 

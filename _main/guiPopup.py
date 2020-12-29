@@ -23,13 +23,13 @@ class Gui_popup(QMessageBox):
 
         self.gui_Ui()                                           # Configura a gui
 
-        self.bt_Cancelar = self.button(self.Cancel)             # Atributo: guarda o botão "Cancel"
+        self.bt_Sair = self.button(self.Cancel)                 # Atributo: guarda o botão "Cancel"/Sair
         self.bt_Salvar = self.button(self.Save)                 # Atributo: guarda o botão "Save"
 
         self.lg = Language()                                    # Instancia o objeto para configuração do idioma
         self.setLanguage(1)                                     # Idioma padrão: Português-Brasil
 
-        self.bt_Cancelar.setFont(QFont('Arial', 10))            # Definindo a fonte dos botões
+        self.bt_Sair.setFont(QFont('Arial', 10))                # Definindo a fonte dos botões
         self.bt_Salvar.setFont(QFont('Arial', 10))
 
     ## Destruidor: Deleta os atributos
@@ -62,5 +62,5 @@ class Gui_popup(QMessageBox):
         self.setWindowTitle(self.txts[0])                       # Título da janela
         self.setText(self.txts[1])                              # Tìtulo da mensagem
         self.setInformativeText(self.txts[2])                   # Mensagem (pergunta)
-        self.bt_Cancelar.setText(self.txts[3])                  # Botão: cancelar
+        self.bt_Sair.setText(self.txts[3])                      # Botão: sair
         self.bt_Salvar.setText(self.txts[4])                    # Botão: salvar

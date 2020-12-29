@@ -1,4 +1,4 @@
-######    self Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS
+######    Gui Reis   -   guisreis25@gmail.com    ######    COPYRIGHT © 2020 KINGS
 
 # -*- coding: utf-8 -*-
 
@@ -41,15 +41,15 @@ class Gui_config(QtWidgets.QWidget):
 
     ## ------------------------------------------------------------------------------------------------
     ## Config - Linguagem:        
-        self.gBox_Ling = self.gBox(self.txts[1], 10, 17, 20, 240, 45, self)         # Cria um grupo (Idioma)
-        self.gBox_Ling.setFlat(True)                                                # Deixa no modo de uma linha (!= de uma "caixa" [grupo criado acima])
+        self.gBox_Lang = self.gBox(self.txts[1], 10, 17, 20, 240, 45, self)         # Cria um grupo (Idioma)
+        self.gBox_Lang.setFlat(True)                                                # Deixa no modo de uma linha (diferente de uma "caixa" [grupo criado acima])
         
-        self.rbt_PtBr = QtWidgets.QRadioButton("Português-Brazil", self.gBox_Ling)  # Cria a opção de Idioma
-        self.rbt_PtBr.setGeometry(QtCore.QRect(20, 25, 121, 18))                    # Posiciona
+        self.rbt_PtBr = QtWidgets.QRadioButton("Português-Brazil", self.gBox_Lang)  # Cria a opção de Idioma
+        self.rbt_PtBr.setGeometry(QtCore.QRect(20, 25, 121, 18))                    # Define a posição
         self.rbt_PtBr.setChecked(True)                                              # Deixa marcado como padrão
         
-        self.rbg_Eng = QtWidgets.QRadioButton("English", self.gBox_Ling)            # Cria a opção de Idioma
-        self.rbg_Eng.setGeometry(QtCore.QRect(160, 25, 61, 18))                     # Posiciona
+        self.rbt_Eng = QtWidgets.QRadioButton("English", self.gBox_Lang)            # Cria a opção de Idioma
+        self.rbt_Eng.setGeometry(QtCore.QRect(160, 25, 61, 18))                     # Define a posição
         
 
     ## ------------------------------------------------------------------------------------------------
@@ -58,10 +58,10 @@ class Gui_config(QtWidgets.QWidget):
         self.gBox_Geral.setFlat(True)                                               # Deixa no modo de uma linha (!= de uma "caixa" [grupo criado acima])
         
         self.lbl_Format = QtWidgets.QLabel(self.txts[3], self.gBox_Geral)           # Add uma label
-        self.lbl_Format.setGeometry(QtCore.QRect(20, 20, 101, 20))                  # Posiciona
+        self.lbl_Format.setGeometry(QtCore.QRect(20, 20, 101, 20))                  # Define a posição
         
         self.cBox_Datas = QtWidgets.QComboBox(self.gBox_Geral)                      # Cria a caixa de opções
-        self.cBox_Datas.setGeometry(QtCore.QRect(135, 20, 101, 22))                 # Posiciona
+        self.cBox_Datas.setGeometry(QtCore.QRect(135, 20, 101, 22))                 # Define a posição
         self.cBox_Datas.addItems(["dd/MM/yyyy", "MM/dd/yyyy", "yyyy/MM/dd"])        # Coloca as opções (padrão: a primeira add [index = 0])
 
 
@@ -108,7 +108,7 @@ class Gui_config(QtWidgets.QWidget):
     ## Método: Define os botões
     def setBotoes(self, lg_:int, fDt_:str) -> None:
         if lg_: self.rbt_PtBr.setChecked(True)                                      # Verifica se é pra deixar marcado essa opção
-        else: self.rbg_Eng.setChecked(True)
+        else: self.rbt_Eng.setChecked(True)
 
         self.cBox_Datas.setCurrentText(fDt_)                                        # Deixa como o texto padrão
 
@@ -122,7 +122,7 @@ class Gui_config(QtWidgets.QWidget):
     ## Método: Muda a linguagem
     def translate(self) -> None:
         self.gBox_Config.setTitle(self.txts[0])                                     # Configuração
-        self.gBox_Ling.setTitle(self.txts[1])                                       # Idioma
+        self.gBox_Lang.setTitle(self.txts[1])                                       # Idioma
         self.gBox_Geral.setTitle(self.txts[2])                                      # Geral
         self.lbl_Format.setText(self.txts[3])                                       # Formato da data
         self.bt_Salvar.setText(self.txts[4])                                        # Salvar

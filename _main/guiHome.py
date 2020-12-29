@@ -67,7 +67,7 @@ class Gui_home(QtWidgets.QWidget):
         copyright_Txt = self.lbl(txt_Copyright, 6, 10, 120, 120, 16, self)      # Cria a lbl com as coordenadas
         copyright_Txt.setFont(QFont('Arial', 6, QFont.Bold))                    # Define a fonte
 
-        txt_Version = "V 1.0 (12/20)"                                           # Texto da versão
+        txt_Version = "V 1.0 (01/21)"                                           # Texto da versão
         version_Txt = self.lbl(txt_Version, 6, 7, 109, 71, 16, self)            # Cria a lbl com as coordenadas
         version_Txt.setFont(QFont('Arial' ,6, QFont.Bold))                      # Define a fonte
 

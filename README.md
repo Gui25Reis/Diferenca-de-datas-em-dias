@@ -1,9 +1,9 @@
 # Diferença em Dias
 ![Versão](https://img.shields.io/badge/version-v1.0.0-orange)
 ![Tamanho](https://img.shields.io/badge/size-110%20MB-blue)
-![Plataformas](https://img.shields.io/badge/plataforma-Windows-lightgrey)
-[![Versão python](https://img.shields.io/badge/python-v3.8.5-blue)](https://www.python.org/downloads/release/python-385/)
-[![Licença](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/LICENSE)
+![Plataformas](https://img.shields.io/badge/plataforma-Windows-lightgrey?logo=windows)
+[![Versão python](https://img.shields.io/badge/python-v3.8.5-blue?logo=python)](https://www.python.org/downloads/release/python-385/)
+[![Licença](https://img.shields.io/badge/license-MIT-brightgreen?)](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/LICENSE)
 
 
 ![Imagem](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/arquivos/imagens/_logo/logo.png)

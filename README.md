@@ -1,9 +1,15 @@
+
+# Diferença em Dias
+![Versão](https://img.shields.io/badge/version-v1.0.0-orange)
+![Tamanho](https://img.shields.io/badge/size-110%20MB-blue)
+![Plataformas](https://img.shields.io/badge/plataforma-Windows-lightgrey)
+[![Versão python](https://img.shields.io/badge/python-v3.8.5-blue)](https://www.python.org/downloads/release/python-385/)
+[![Licença](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/LICENSE)
+
+
 ![Imagem](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/arquivos/imagens/_logo/logo.png)
 
-# Sobre
-Esse programa faz o cálculo de dias entre duas datas. Ele está mais detalhado na [home](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/wiki) da wiki!
-
-# **Guia:**
+Esse programa faz o cálculo de dias entre duas datas, há mais detalhes sobre ele na [home](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/wiki) da wiki.
 
 1. [Instalação](#instalação)
 2. [Requerimentos](#requerimentos)

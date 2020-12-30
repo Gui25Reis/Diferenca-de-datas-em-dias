@@ -5,3 +5,5 @@
 ## Tirando a pasta vscode + pycache
 */_main/___pycache__/*
 */_main/.vscode/*
+*.prproj
+*.psd

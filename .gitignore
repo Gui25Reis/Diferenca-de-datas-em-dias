@@ -3,5 +3,5 @@
 ## Removendo o que não é necessário mostrar. ##
 
 ## Tirando a pasta vscode + pycache
-/_main/[_]_pycache__/
-/_main/[.]vscode/
+*/_main/___pycache__/*
+*/_main/.vscode/*

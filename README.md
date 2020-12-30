@@ -1,5 +1,5 @@
 # Diferença em Dias
-![Versão](https://img.shields.io/badge/version-v1.0.0-orange)
+[![Versão](https://img.shields.io/badge/version-v1.0.0-orange)](https://github.com/Gui25Reis/Diferenca-em-dias/releases/tag/1.0.0)
 ![Tamanho](https://img.shields.io/badge/size-75%20MB-blue)
 ![Plataformas](https://img.shields.io/badge/plataforma-Windows-lightgrey?logo=windows)
 [![Versão python](https://img.shields.io/badge/python-v3.8.5-blue?logo=python)](https://www.python.org/downloads/release/python-385/)

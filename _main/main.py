@@ -18,3 +18,7 @@ if __name__ == "__main__":
 
     win.show()
     sys.exit(app.exec_())
+
+
+### Criando o Executável ###
+# pyinstaller.exe --onefile --windowed --noconsole --name='Diferença em Dias' --icon=images/logo.ico main.py --version-file versao.txt

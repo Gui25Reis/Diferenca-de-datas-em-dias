@@ -1,6 +1,6 @@
 # Diferença em Dias
 ![Versão](https://img.shields.io/badge/version-v1.0.0-orange)
-![Tamanho](https://img.shields.io/badge/size-110%20MB-blue)
+![Tamanho](https://img.shields.io/badge/size-75%20MB-blue)
 ![Plataformas](https://img.shields.io/badge/plataforma-Windows-lightgrey?logo=windows)
 [![Versão python](https://img.shields.io/badge/python-v3.8.5-blue?logo=python)](https://www.python.org/downloads/release/python-385/)
 [![Licença](https://img.shields.io/badge/license-MIT-brightgreen?)](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/LICENSE)
@@ -19,7 +19,7 @@ Esse programa faz o cálculo de dias entre duas datas, há mais detalhes sobre e
 
 ## Instalação
 Há duas maneiras de usar esse programa:
-- Existe um executável pronto que pode ser usado. Basta baixa o [.zip](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/raw/main/arquivos/_executavel.rar) e executar o arquivo .exe. Quando aberto, aparecerá duas telas, a tela preta pode minimizar e deixar apenas o programa. Nesse [vídeo](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/wiki/Demonstração) mostra um exemplo da execução e do uso.
+- Existe um executável pronto que pode ser usado. Basta baixa o [.zip](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/raw/main/arquivos/_executavel.rar) e executar o arquivo .exe. Nesse [vídeo](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/wiki/Demonstração) mostra um exemplo da execução e do uso.
 
 - Baixando a pasta [_main](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/tree/master/_main) você consegue ter acesso ao código. As requisições estão declaradas na parte de [Requerimentos](#requerimentos). Para executar o programa basta rodar o arquivo ```main```.
 
@@ -35,7 +35,7 @@ A documentação do projeto está feita na [wiki](https://github.com/Gui25Reis/D
 ![tutorial](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/arquivos/_documentacao/guia-rapido/home/home.jpg)
 
 ## Licença
-Este projeto é licencenciado por [MIT license](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/LICENSE).
+Este projeto é licencenciado por [MIT License](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/LICENSE).
 
 ## Autor
 Esse projeto foi desenvolvido por:

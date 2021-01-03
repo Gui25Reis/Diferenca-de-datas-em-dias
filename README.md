@@ -38,7 +38,15 @@ A documentação do projeto está feita na [wiki](https://github.com/Gui25Reis/D
 Este projeto é licencenciado por [MIT License](https://github.com/Gui25Reis/DIferenca-de-datas-em-dias/blob/master/LICENSE).
 
 ## Autor
-Esse projeto foi desenvolvido por:
-
-[Gui Reis](https://github.com/Gui25Reis)
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Gui25Reis">
+        <img src="https://avatars1.githubusercontent.com/u/48360732" width="100px;" alt="Foto do Gui Reis no GitHub"/><br>
+        <sub>
+          <b>Gui Reis</b>
+        </sub>
+      </a>
+    </td>
+</table>
 

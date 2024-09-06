@@ -7,3 +7,7 @@
 */_main/.vscode/*
 *.prproj
 *.psd
+
+
+## Mac
+*.DS_Store
